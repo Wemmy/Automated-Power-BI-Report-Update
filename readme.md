@@ -1,7 +1,13 @@
-# Automexated Power BI Report Update
+ <div align="center">
+  <p>
+      <img src="https://github.com/Wemmy/BI-with-Outlook-and-dbt/blob/master/BI_with_outlook.png"></a>
+  </p>
+</div>
+
+# Automated Report Update with Outlook
 
 ## Introduction
-This project automates the update process of Power BI reports by integrating various tools including Power Automate, Python, dbt (data build tool), and GitHub Actions. The automation pipeline is designed to streamline the update of Power BI reports by fetching data from emails, processing it through a local SQL server, and finally generating the desired tables for Power BI reporting.
+This project automates the update process of reports by integrating various tools including Power Automate, Python, dbt (data build tool), and GitHub Actions. The automation pipeline is designed to streamline the update of reports by fetching data from outlook, processing it through a local SQL server, and finally generating the desired tables for Power BI reporting.
 
 ## Table of Contents
 - [Introduction](#introduction)
