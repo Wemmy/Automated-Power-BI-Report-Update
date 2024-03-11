@@ -1,0 +1,46 @@
+version: 2
+
+sources:
+
+  - name: calendar
+    description: fiscal calendar for all cgc usages
+    schema: lfl
+    tables:
+      - name: ref_fy_calendar_new
+
+  - name: lfl
+    description: all excel data from JDE
+    schema: lfl
+    tables:
+      - name: ytd_revenue
+        descriptions: >
+          revenue
+        columns:
+          - name: gldate
+            tests:
+              - not_null
+          - name: businessunit
+            tests:
+              - not_null
+          - name: objectaccount
+            tests:
+              - not_null
+          - name: jeexplanation
+            tests:
+              - not_null
+      - name: ytd_revenue_new
+      - name: ytd_revenue_chefshall
+      - name: ytd_revenue2018-2019
+      - name: budget_revenue
+      - name: business_unit_ref
+      - name: gl_ref_test
+
+  - name: canteen
+    description: data from Canteloupe
+    schema: canteen
+    tables:
+      - name: vendingmicromarketvisititemfact_v
+      - name: recognizesalesrevenuefact_v
+      - name: dimdate_V
+
+
